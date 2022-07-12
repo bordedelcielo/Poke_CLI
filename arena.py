@@ -17,6 +17,7 @@ import time
 class Arena:
     #init for colorama to fixed windows wierdness
     init()
+
     @staticmethod
     def clear_screen():
         os.system('cls' if os.name == 'nt' else 'clear')
@@ -163,7 +164,7 @@ class Arena:
 
         print(f"""
 {self.master1.name} Capture Your Team
-You will get to capture up to 5 Pokemon
+You will get to capture up to {Master.MAX_TEAM_SIZE} Pokemon
 If you change your mind you can Type Remove to choose a pokemon to remove
         """)
         print(Style.RESET_ALL, end='')
@@ -172,7 +173,7 @@ If you change your mind you can Type Remove to choose a pokemon to remove
         print(Fore.YELLOW, Style.BRIGHT, end="")
         print(f"""
 {self.master2.name} Capture Your Team
-You will get to capture up to 5 Pokemon
+You will get to capture up to {Master.MAX_TEAM_SIZE} Pokemon
 If you change your mind you can Type Remove to choose a pokemon to remove
         """)
         print(Style.RESET_ALL, end='')
