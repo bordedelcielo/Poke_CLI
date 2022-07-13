@@ -28,14 +28,14 @@ battle simulation game from the information from [pokeapi.co](https://pokeapi.co
     ```
     pip install -r requirements.txt
     ```
-- Now the environment is configured and you can rule hte application on Windows/Linux:
-    ```
-    python Poke_CLI
-    ```
+- Now the environment is configured and you can run the application on Windows/Linux:
+        ```
+        python Poke_CLI
+        ```
 
-- or on Mac
-    ```
-    python3 Poke_CLI
-    ```
+    - or on Mac
+        ```
+        python3 Poke_CLI
+        ```
     
 
