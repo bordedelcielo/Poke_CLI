@@ -12,8 +12,6 @@ class Arena:
     #init for colorama to fixed windows wierdness
     init()
 
-
-
     def __init__(self):
         self.master1=None
         self.master2=None
