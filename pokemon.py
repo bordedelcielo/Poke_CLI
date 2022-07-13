@@ -45,10 +45,10 @@ class Pokemon:
             # Attacker Starts battler
             pokemon.hit_points-=attacking_power_self if not chance_self \
                 else attacking_power_self*((self.master.crit_bonus/100)+1)
-            self.hit_points-=attacking_power_pokemon if not chance_pokemon \
-                else attacking_power_pokemon*((pokemon.master.crit_bonus/100)+1)
+            self.hit_points-=int(attacking_power_pokemon) if not chance_pokemon \
+                else int(attacking_power_pokemon*((pokemon.master.crit_bonus/100)+1))
         
-    def display(self, cols=40):
+    def display(self, cols=100):
         poke_img = ascii_magic.from_url(self.image, columns=cols)
         ascii_magic.to_terminal(poke_img)
 
