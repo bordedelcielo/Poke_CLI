@@ -17,7 +17,7 @@ battle simulation game from the information from [pokeapi.co](https://pokeapi.co
     python Poke_CLI
     ```
 
-or on mac
+- or on mac
 
     ```
     python3 Poke_CLI
