@@ -43,8 +43,8 @@ class Pokemon:
             chance_pokemon=random.choice([True if n < pokemon.master.crit_chance*1000 
                 else False for n in range(1000)])
             # Attacker Starts battler
-            pokemon.hit_points-=attacking_power_self if not chance_self \
-                else attacking_power_self*((self.master.crit_bonus/100)+1)
+            pokemon.hit_points-=int(attacking_power_self) if not chance_self \
+                else int(attacking_power_self*((self.master.crit_bonus/100)+1))
             self.hit_points-=int(attacking_power_pokemon) if not chance_pokemon \
                 else int(attacking_power_pokemon*((pokemon.master.crit_bonus/100)+1))
         
