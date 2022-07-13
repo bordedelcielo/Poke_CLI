@@ -1,5 +1,4 @@
 import os
-from pyfiglet import figlet_format
 from colorama import Fore
 from colorama import Style
 from colorama import init

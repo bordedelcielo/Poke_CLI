@@ -3,6 +3,7 @@ from pokemon import Pokemon
 import ascii_magic
 from colorizer import *
 import time
+from pyfiglet import figlet_format
 
 class Arena:
     def __init__(self):
