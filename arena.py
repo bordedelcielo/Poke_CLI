@@ -119,8 +119,6 @@ class Arena:
 
     def battle_loop(self):
         
-        # self.master1.pokemon=list(filter(lambda pokemon: pokemon.hit_points>0, self.master1.pokemon))
-        # self.master2.pokemon=list(filter(lambda pokemon: pokemon.hit_points>0, self.master2.pokemon))
         while self.master1.pokemon and self.master2.pokemon:
             self.battle()
             Arena.clear_screen()

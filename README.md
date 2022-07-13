@@ -11,14 +11,29 @@ battle simulation game from the information from [pokeapi.co](https://pokeapi.co
     git clone https://github.com/CrtlAltElite/Poke_CLI
     ```
 
-- after this completes type:
+- after this completes enter to create a virtual environment:
 
+    ```
+    python -m venv venv
+    ```
+- Activate your venv on WINDOWS enter:
+    ```
+    venv\Scripts\activate
+    ```
+- On Mac or Linux activate your venv with
+    ```
+    source venv/bin/activate
+    ```
+- Install the requirements by entering
+    ```
+    pip install -r requirements.txt
+    ```
+- Now the environment is configured and you can rule hte application on Windows/Linux:
     ```
     python Poke_CLI
     ```
 
-- or on mac
-
+- or on Mac
     ```
     python3 Poke_CLI
     ```
