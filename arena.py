@@ -133,7 +133,7 @@ class Arena():
 
                 #player2 OG HP
                 self.master2.pokemon[master2_index].display()
-                print_yellow(figlet_format(f'\tHP {start_hp_p2}', font="doom"))
+                print_blue(figlet_format(f'\tHP {start_hp_p2}', font="doom"))
                 time.sleep(2)
                 clear_screen()
 
@@ -175,6 +175,7 @@ class Arena():
 You will get to capture up to {Master.MAX_TEAM_SIZE} Pokemon
 If you change your mind you can type Remove to choose a pokemon to release
         """)
+        time.sleep(3)
         self.collect_team(self.master1)
 
 
@@ -183,6 +184,7 @@ If you change your mind you can type Remove to choose a pokemon to release
 You will get to capture up to {Master.MAX_TEAM_SIZE} Pokemon
 If you change your mind you can type Remove to choose a pokemon to release
         """)
+        time.sleep(3)
         self.collect_team(self.master2)
 
         clear_screen()
