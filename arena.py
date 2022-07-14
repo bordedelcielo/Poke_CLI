@@ -11,7 +11,6 @@ class Arena:
         self.master2=None
     
     def welcome(self):
-
         clear_screen()
         print('\n'*5)
         logo=ascii_magic.from_url('https://res.cloudinary.com/cae67/image/upload/v1657497449/pokemon_mdjxb5.png')
@@ -52,7 +51,10 @@ class Arena:
                 catchem=input_yellow(f"Would you like to Catch {poke_name}? (Y/N) ")
 
             if catchem[0].lower()=='y':
-                print(master.catch(poke))
+                clear_screen()
+                print_red(master.catch(poke))
+                time.sleep(2)
+                clear_screen()
 
         
 
@@ -91,10 +93,13 @@ class Arena:
                 #flash balls 
                 logo=ascii_magic.from_url('https://res.cloudinary.com/cae67/image/upload/v1657666237/pokeball_closed_kqdsgd.png')
                 ascii_magic.to_terminal(logo)
+                
                 time.sleep(1)
                 clear_screen()
+
                 logo=ascii_magic.from_url('https://res.cloudinary.com/cae67/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1657666100/pokeballopen_rtossk.png')
                 ascii_magic.to_terminal(logo)
+                
                 time.sleep(1)
                 clear_screen()
 

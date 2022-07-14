@@ -1,4 +1,3 @@
-from pokemon import Pokemon
 class Master:
     MAX_TEAM_SIZE=3
 
@@ -12,7 +11,7 @@ class Master:
     def catch(self, poke):
         if len(self.pokemon)>=Master.MAX_TEAM_SIZE:
             return "You have too many Pokemon"
-        if poke in self.pokemon:
+        if poke.id in [p.id for p in self.pokemon]:
             return f"You have Already caught {poke.name}"
         poke.master=self
         self.pokemon.append(poke)

@@ -1,7 +1,5 @@
 import os
-from colorama import Fore
-from colorama import Style
-from colorama import init
+from colorama import Fore, Style, init
 
 #init for colorama to fixed windows wierdness
 init()
