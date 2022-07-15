@@ -101,14 +101,13 @@ class Arena():
                 input_red("\t\t\t\t\t --Press Enter For the Next Round--")
             else:
                 input_green("\t\t\t\t\t --Press Enter--")
+        if len(self.master1.pokemon)<=0:
+            clear_screen()
+            print_red(figlet_format(f"{self.master2.name} Claims Victory",font="poison"))
 
-                if not self.master1.pokemon:
-                    clear_screen()
-                    print_red(figlet_format(f"{self.master2.name} Claims Victory", font="poison"))
-                
-                if not self.master2.pokemon:
-                    clear_screen()
-                    print_red(figlet_format(f"{self.master1.name} Claims Victory", font="poison"))
+        if len(self.master2.pokemon)<=0:
+            clear_screen()
+            print_red(figlet_format(f"{self.master1.name} Claims Victory",font="poison"))
                 
             
 
@@ -175,7 +174,7 @@ class Arena():
 You will get to capture up to {Master.MAX_TEAM_SIZE} Pokemon
 If you change your mind you can type Remove to choose a pokemon to release
         """)
-        time.sleep(3)
+        time.sleep(4)
         self.collect_team(self.master1)
 
 
@@ -184,7 +183,7 @@ If you change your mind you can type Remove to choose a pokemon to release
 You will get to capture up to {Master.MAX_TEAM_SIZE} Pokemon
 If you change your mind you can type Remove to choose a pokemon to release
         """)
-        time.sleep(3)
+        time.sleep(4)
         self.collect_team(self.master2)
 
         clear_screen()
