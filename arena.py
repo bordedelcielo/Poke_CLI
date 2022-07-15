@@ -130,6 +130,12 @@ class Arena():
                 time.sleep(2)
                 clear_screen()
 
+                # Display vrs image
+                logo=ascii_magic.from_url('https://res.cloudinary.com/cae67/image/upload/v1657665854/versus_yfu7wi.png')
+                ascii_magic.to_terminal(logo)
+                time.sleep(2)
+                clear_screen()
+
                 #player2 OG HP
                 self.master2.pokemon[master2_index].display()
                 print_blue(figlet_format(f'\tHP {start_hp_p2}', font="doom"))
